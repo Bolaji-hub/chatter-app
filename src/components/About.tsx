@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="flex">
       <div className=" mx-auto flex flex-col justify-center items-center h-full px-4 mt-10">
-        <h3 className="capitalize text-3xl">about chatter</h3>
+        <h3 className="capitalize text-3xl text-center">about chatter</h3>
         <p className=" py-4 min-h-fit text-sm leading-5 ">
           Chatter is a multi-functional platform where authors and readers can
           have access
