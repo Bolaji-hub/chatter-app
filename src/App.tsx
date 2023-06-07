@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
 import Join from "./components/Join";
+import Testimony from "./components/Testimony";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Home />
       <About />
       <Join />
+      <Testimony />
     </div>
   );
 };

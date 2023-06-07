@@ -3,10 +3,10 @@ import image from "../assets/unsplash_87gLIFoj79c.png";
 
 const About = () => {
   return (
-    <div className="flex">
-      <div className=" mx-auto flex flex-col justify-center items-center h-full px-4 mt-10">
+    <div className="flex py-10 flex-wrap-reverse">
+      <div className="mx-auto flex flex-col justify-center items-center flex-1 basis-80">
         <h3 className="capitalize text-3xl text-center">about chatter</h3>
-        <p className=" py-4 min-h-fit text-sm leading-5 ">
+        <p className="py-4 min-h-fit text-sm leading-5 ">
           Chatter is a multi-functional platform where authors and readers can
           have access
           <br /> to their own content. It aims to be a traditional bookworm's
@@ -20,11 +20,9 @@ const About = () => {
           <br /> beliefs. By promoting dialogue and understanding, we strive.
         </p>
       </div>
-      <img
-        src={image}
-        alt=""
-        className="rounded-md w-2/4 h-3/4 mt-10 max-w-sm mr-6"
-      />
+      <div className="rounded-md flex-1 basis-32">
+        <img src={image} alt="" />
+      </div>
     </div>
   );
 };

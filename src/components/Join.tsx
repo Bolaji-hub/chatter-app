@@ -36,7 +36,7 @@ const Join = () => {
             </p>
           </span>
         </div>
-        <div className="border rounded-md px-4 py-2">
+        <div className="border rounded-md px-4 py-2 ">
           <img
             src={fluent}
             alt=""
