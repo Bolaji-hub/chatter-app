@@ -11,7 +11,7 @@ const Home = () => {
         }}
         className=" min-h-screen text-white max-auto flex flex-col items-center justify-center h-full px-2"
       >
-        <h3 className="text-3xl mb-4 mr-10">
+        <h3 className="text-3xl text-center mb-4 mr-10">
           Welcome to Chatter: A Haven for Text-
           <br /> Based Content
         </h3>
