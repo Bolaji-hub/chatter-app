@@ -5,7 +5,7 @@ import third from "../assets/unsplash_iEEBWgY_6lA.png";
 
 const Started = () => {
   return (
-    <div className="py-20 px-10 flex">
+    <div className="py-20 px-20 flex">
       <div className="flex items-center gap-8">
         <div className="flex flex-col gap-20">
           <img src={first} alt="" className="rounded-full" />
