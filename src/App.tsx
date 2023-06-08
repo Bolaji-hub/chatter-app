@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Join from "./components/Join";
 import Testimony from "./components/Testimony";
+import Started from "./components/Started";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Join />
       <Testimony />
+      <Started />
     </div>
   );
 };

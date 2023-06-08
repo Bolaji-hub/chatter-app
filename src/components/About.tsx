@@ -3,7 +3,7 @@ import image from "../assets/unsplash_87gLIFoj79c.png";
 
 const About = () => {
   return (
-    <div className="flex py-10 flex-wrap-reverse">
+    <div className="flex py-20 flex-wrap-reverse">
       <div className="mx-auto flex flex-col justify-center items-center flex-1 basis-80">
         <h3 className="capitalize text-3xl text-center">about chatter</h3>
         <p className="py-4 min-h-fit text-sm leading-5 ">

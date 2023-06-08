@@ -5,7 +5,7 @@ import vector from "../assets/Vector (28).svg";
 
 const Join = () => {
   return (
-    <div className="px-6">
+    <div className="px-6 py-20">
       <div className="h-full mt-8 flex flex-col ">
         <h3 className="text-xl font-semibold text-center items-center mr-6 leading-loose">
           Why you should join chatter
