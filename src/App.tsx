@@ -1,23 +1,14 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Home from "./components/Home";
-import About from "./components/About";
-import Join from "./components/Join";
-import Testimony from "./components/Testimony";
-import Started from "./components/Started";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   return (
-    <div>
-      <Nav />
-      <Home />
-      <About />
-      <Join />
-      <Testimony />
-      <Started />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" Component={Landing} />
+      <Route path="/sign-up" Component={SignUp} />
+    </Routes>
   );
 };
 
