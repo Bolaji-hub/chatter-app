@@ -9,3 +9,21 @@
     font-family: "DM Sans", sans-serif;
   }
 }
+
+.container {
+  padding-left: clamp(0.5rem, 4vw, 10rem);
+  padding-right: clamp(0.5rem, 4vw, 10rem);
+  max-width: clamp(800px, 75%, 1400px);
+  margin: auto;
+}
+
+.large-container {
+  padding-left: clamp(0.5rem, 4vw, 10rem);
+  padding-right: clamp(0.5rem, 4vw, 10rem);
+  @screen md {
+    padding-left: clamp(0.5rem, 15%, 10rem);
+    padding-right: clamp(0.5rem, 15%, 10rem);
+  }
+  max-width: clamp(800px, 75%, 1400px);
+  margin: auto;
+}
