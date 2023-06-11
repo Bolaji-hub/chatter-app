@@ -107,7 +107,7 @@ const SideNav = () => {
     },
   ];
   return (
-    <nav className="min-h-screen p-4 pl-14 w-60 flex flex-col md:sticky top-0 left-0">
+    <nav className="min-h-screen p-4 pl-14 w-60 flex flex-col sticky top-0 left-0">
       <h1 className="text-3xl text-blue-500 font-bold ml-6 ">CHATTER</h1>
       <ul className="">
         {links.map(({ title, items, Icon }) => (
@@ -116,7 +116,7 @@ const SideNav = () => {
 
             <ul className="text-[#626262] text-sm font-light flex flex-col">
               {items.map((item) => (
-                <li className="flex gap-3 p-2 my-2">
+                <li className="flex gap-2 p-2 my-2">
                   {item.Icon && <item.Icon />}
                   <a href={item.href}>{item.label}</a>
                 </li>
@@ -132,24 +132,6 @@ const SideNav = () => {
       >
         {SideNav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-      <h1 className="text-3xl text-blue-500 font-bold ml-6 ">CHATTER</h1>
-      <ul className="">
-        {links.map(({ title, items, Icon }) => (
-          <li key={title}>
-            <h3 className="font-thin text-md p-4 mt-2 mr-10">{title}</h3>
-
-            <ul className="text-[#626262] text-sm font-light flex flex-col">
-              {items.map((item) => (
-                <li className="flex gap-3 p-2 my-2">
-                  {item.Icon && <item.Icon />}
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-        <p className="text-red-500 capitalize">log out</p>
-      </ul>
     </nav>
   );
 };
