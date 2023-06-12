@@ -4,6 +4,7 @@ import Search from "../components/Search";
 import Posts from "../components/Posts";
 import img from "../assets/unsplash_fHXpgMd_XhE.png";
 import bell from "../assets/Vector (34).svg";
+import SubHeader from "../components/SubHeader";
 
 const Feed = () => {
   return (
@@ -19,6 +20,7 @@ const Feed = () => {
             </div>
           </div>
           <Posts />
+          <SubHeader />
         </div>
       </div>
     </div>
