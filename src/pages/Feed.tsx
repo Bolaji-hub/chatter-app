@@ -5,6 +5,9 @@ import Posts from "../components/Posts";
 import img from "../assets/unsplash_fHXpgMd_XhE.png";
 import bell from "../assets/Vector (34).svg";
 import SubHeader from "../components/SubHeader";
+import Post from "../components/Post";
+import Post2 from "../components/Post2";
+import Post3 from "../components/Post3";
 
 const Feed = () => {
   return (
@@ -21,6 +24,9 @@ const Feed = () => {
           </div>
           <Posts />
           <SubHeader />
+          <Post />
+          <Post2 />
+          <Post3 />
         </div>
       </div>
     </div>
