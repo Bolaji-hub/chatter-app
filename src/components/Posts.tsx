@@ -10,7 +10,7 @@ const Posts = () => {
           Explore different content you'd love{" "}
         </p>
       </div>
-      <button className="bg-blue-500 border rounded-lg py-4 px-4 flex gap-2 mt-3 text-white text-sm text-center">
+      <button className="bg-blue-500 border rounded-lg py-4 px-6 flex gap-4 mt-3 text-white text-sm text-center cursor-pointer">
         <img src={pen} alt="" />
         Post Content
       </button>
