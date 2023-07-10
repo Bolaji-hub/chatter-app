@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import Socials from "../components/Socials";
 import image from "../assets/unsplash_9pjBx5uVBlg.png";
-import google from "../assets/1534129544 1.svg";
-import linkedin from "../assets/174857 1.svg";
 
-const SignUp = () => {
+const SignUp: React.FC = () => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+    console.log("Submitted:", { fullName, email, password });
+  };
   return (
     <div className="flex min-h-screen">
       <div
@@ -24,19 +36,24 @@ const SignUp = () => {
         </div>
       </div>
 
-      <form className="py-10 flex-1 basis-6/12 px-6 gap-4 pl-8 large-container">
+      <form
+        onSubmit={handleSubmit}
+        className="py-10 flex-1 basis-6/12 px-6 gap-4 pl-8 large-container"
+      >
         <h3 className="font-bold text-2xl pb-4">Register as a Writer/Reader</h3>
         <fieldset>
           <label
             htmlFor="full-name"
             className="text-[#3B3B3B] text-sm font-thin"
           >
-            First Name
+            Full Name
           </label>
           <input
             id="full-name"
             type="text"
+            value={fullName}
             placeholder="John"
+            onChange={(e) => setFullName(e.target.value)}
             className="w-full border border-solid border-[#CED4DA] capitalize p-3 rounded-lg text-[#212529]"
           />
         </fieldset>
@@ -63,7 +80,9 @@ const SignUp = () => {
         <input
           id="email"
           type="text"
+          value={email}
           placeholder="johndoe@gmail.com"
+          onChange={(e) => setEmail(e.target.value)}
           className="w-full border border-solid border-[#CED4DA] capitalize p-3 rounded-lg text-[#212529]"
         />
         <label htmlFor="password" className="text-[#3B3B3B] text-sm font-thin">
@@ -72,7 +91,9 @@ const SignUp = () => {
         <input
           id="password"
           type="text"
+          value={password}
           placeholder="*******"
+          onChange={(e) => setPassword(e.target.value)}
           className="w-full border border-solid border-[#CED4DA] capitalize p-3 rounded-lg text-[#212529]"
         />
         <label
@@ -84,20 +105,18 @@ const SignUp = () => {
         <input
           id="confirm password"
           type="text"
+          value={confirmPassword}
           placeholder="*******"
+          onChange={(e) => setConfirmPassword(e.target.value)}
           className="w-full border border-solid border-[#CED4DA] capitalize p-3 rounded-lg text-[#212529]"
         />
-        <button className="w-full bg-blue-500 p-3 text-white rounded-lg mt-3  ">
+        <button
+          type="submit"
+          className="w-full bg-blue-500 p-3 text-white rounded-lg mt-3  "
+        >
           Create account
         </button>
-        <button className="w-full flex justify-center items-center gap-3 bg-white p-2 text-black rounded-lg border-solid border-[#CED4DA] border font-thin text-sm ">
-          <img src={google} alt="" />
-          Sign up with google
-        </button>
-        <button className="w-full flex justify-center items-center gap-3 bg-white p-2 text-black rounded-lg border-solid border border-[#CED4DA] font-thin text-sm">
-          <img src={linkedin} alt="" className="" />
-          Sign up with Linkedin
-        </button>
+        <Socials />
       </form>
     </div>
   );

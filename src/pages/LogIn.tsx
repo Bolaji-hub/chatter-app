@@ -49,7 +49,7 @@ const LogIn = () => {
             className="w-full border border-solid border-[#CED4DA] capitalize p-3 rounded-lg text-[#212529]"
           />
           <button className="w-full bg-blue-500 p-3 text-white rounded-lg mt-3  ">
-            Create account
+            Log in
           </button>
         </fieldset>
       </form>
